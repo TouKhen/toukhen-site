@@ -247,8 +247,6 @@ body{
     /* test */
     -webkit-perspective: 484px;
     perspective: 484px;
-    -webkit-box-shadow: -67.1px 62.5px 125px -25px rgba(9,9,14,.856), -16.2px 37.5px 75px -37.5px rgba(6,12,34,.274);
-    box-shadow: -67.1px 62.5px 125px -25px rgba(9,9,14,.856), -16.2px 37.5px 75px -37.5px rgba(6,12,34,.274);
     -webkit-transform: scale(1) perspective(1000px) rotateX(20deg) rotateY(-23deg) rotate(10deg) translateX(-15px) translateY(35px);
     transform: scale(1) perspective(1000px) rotateX(20deg) rotateY(-23deg) rotate(10deg) translateX(-15px) translateY(35px);
     opacity: 70%;
