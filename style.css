@@ -3,6 +3,11 @@
     src: url('font/big_noodle_titling.ttf');
 }
 
+@font-face{
+    font-family: 'FireSans';
+    src: url('font/FiraSans-Medium.otf');
+}
+
 :root{
     --green1: #40b27d;
     --grey1: #0e0e0e;
@@ -19,7 +24,7 @@ body{
 }
 
 #pagebg{
-    background-image: url('greenwaveext.png');
+    background-image: url('img/greenwaveext.png');
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
@@ -162,9 +167,9 @@ body{
 }
 
 .header-bg-anim span{
-    width: 50px;
+    width: 3vw;
     height: 300px;
-    margin: 0 20px;
+    margin: 0 15px;
     background-color: var(--grey1);
     animation: bganime 1.4s linear infinite;
 }
@@ -227,7 +232,55 @@ body{
     }
 }
 
+/* Start Main */
+
+.site-1-img{
+    height: 200px;
+    width: 100%;
+    background-image: url("img/site1.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px;
+    filter: blur(1.5px);
+    transition: ease-in 0.2s;
+    /* test */
+    -webkit-perspective: 484px;
+    perspective: 484px;
+    -webkit-box-shadow: -67.1px 62.5px 125px -25px rgba(9,9,14,.856), -16.2px 37.5px 75px -37.5px rgba(6,12,34,.274);
+    box-shadow: -67.1px 62.5px 125px -25px rgba(9,9,14,.856), -16.2px 37.5px 75px -37.5px rgba(6,12,34,.274);
+    -webkit-transform: scale(1) perspective(1000px) rotateX(20deg) rotateY(-23deg) rotate(10deg) translateX(-15px) translateY(35px);
+    transform: scale(1) perspective(1000px) rotateX(20deg) rotateY(-23deg) rotate(10deg) translateX(-15px) translateY(35px);
+    opacity: 70%;
+}
+
+.site-1-img:hover{
+    filter: blur(0);
+    /* test */
+    transform: scale(1) perspective(0) rotateX(0) rotateY(0) rotate(0) translateX(-45px) translateY(35px);
+    opacity: 100%;
+}
+
+.main-container-imgright div{
+    float: left;
+}
+
+.main-container-imgright p{
+    color: white;
+    margin-top: 2.3em;
+    font-size: 34px;
+}
+
+.site-link{
+    color: var(--green1);
+    font-size: 25px;
+    font-family: 'FireSans';
+    font-weight: 500;
+}
+
+/* End Main */
+
 a:hover{
     color: var(--green1)!important;
+    text-decoration: none!important;
 }
 
