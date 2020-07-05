@@ -9,10 +9,16 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
+  <audio id="olala">
+    <source src="olalalenchement.mp3" type="audio/mpeg">
+  </audio>
     <div class="container-fluid" id="pagebg">
+      <div class="canvas-wrap">
+        <div class="canvas-content"></div>
+        <div id="canvas" class="gradient"></div>
         <!-- Start Nav Bar -->
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#">TouKhen</a>
+            <a class="navbar-brand" href="#" onclick="playAudio()">TouKhen</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -23,7 +29,7 @@
                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="pages/counter.html">Counter</a>
+                  <a class="nav-link" href="#">Link</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -38,42 +44,12 @@
                 </li>
               </ul>
               <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="myInput" onkeyup="myFunction()" onclick="myDropDown()">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn my-2 my-sm-0" type="submit">Search</button>
-                <ul id="myUL">
-                  <li><a href="#">Adele</a></li>
-                  <li><a href="#">Agnes</a></li>
-                
-                  <li><a href="#">Billy</a></li>
-                  <li><a href="#">Bob</a></li>
-                
-                  <li><a href="#">Calvin</a></li>
-                  <li><a href="#">Christina</a></li>
-                  <li><a href="#">Cindy</a></li>
-                </ul>
               </form>
             </div>
           </nav>
         <!-- End Nav Bar -->
-    
-        <!-- Start Header -->
-        <header class="header-bg-container">
-            <div class="header-container">
-                <div class="text1">Welcome to</div>
-                <div class="text2">TouKhen SITE</div>
-            </div>
-
-            <div class="header-bg-anim">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-        </header>
-        <!-- End Header -->
     
         <!-- Start Main -->
         <main class="container main-div">
@@ -89,11 +65,27 @@
               </div>
             </div>
         </main>
+      
+  </div>
 </div>
 
     <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- Main library -->
+    <script src="js/three.min.js"></script>
+      
+    <!-- Helpers -->
+    <script src="js/projector.js"></script>
+    <script src="js/canvas-renderer.js"></script>
+
+    <!-- Visualitzation adjustments -->
+    <script src="js/3d-lines-animation.js"></script>
+
+    !-- Animated background color -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="js/color.js"></script>
 </body>
 </html>
