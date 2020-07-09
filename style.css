@@ -8,17 +8,17 @@
     src: url('font/FiraSans-Medium.otf');
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* Backup colors:
     423E3B
     0e0e0e
     161413
-
+#c5a600
 */
 
 :root{
-    --green1: #c5a600;
+    --green1: #ff3636;
     --grey1: #424242;
     --bars: #252525;
 }
@@ -26,7 +26,7 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Grenze Gotisch', cursive;
 }
 
 body{
@@ -327,19 +327,19 @@ a:hover{
 .show {display:block !important;}
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Grenze Gotisch', cursive;
 }
 
 .count-button {
 	font-size: 48px;
 	padding: 10px;
 	margin: 10px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Grenze Gotisch', cursive;
 }
 
 .count {
 	font-size: 150px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Grenze Gotisch', cursive;
     text-align: center;
     height: 200px;
 }
