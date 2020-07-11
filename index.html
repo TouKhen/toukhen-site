@@ -25,17 +25,6 @@
                 <li class="nav-item">
                   <a class="nav-link" href="pages/counter.html">Counter</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </li>
               </ul>
               <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="myInput" onkeyup="myFunction()" onclick="myDropDown()">
@@ -76,17 +65,25 @@
         <!-- End Header -->
     
         <!-- Start Main -->
-        <main class="container main-div">
-            <div class="container-fluid main-container-imgright">
-              <div class="col-8">
-                <p>Here is a site i made :</p>
-                <a href="https://tp-responsive-6-jack-lecomte.netlify.com/" class="site-link">https://tp-responsive-6-jack-lecomte.netlify.com/</a>
-              </div>
-              <div class="col-4">
-                <a href="https://tp-responsive-6-jack-lecomte.netlify.com/" class="container-fluid">
-                  <div class="site-1-img"></div>
+        <main class="container-fluid main-div">
+            <div class="container-fluid" id="site-1">
+                <div class="col-md-6">
+                    <p>"Yebo le vélo"</p>
+                    <a href="https://tp-responsive-6-jack-lecomte.netlify.com" class="site-link">https://tp-responsive-6-jack-lecomte.netlify.com</a>
+                </div>
+                <a class="col-md-6" href="#">
+                    <div class="site-img"></div>
                 </a>
-              </div>
+            </div>
+
+            <div class="container-fluid" id="site-2">
+                <a class="col-md-6" href="#">
+                    <div class="site-img"></div>
+                </a>
+                <div class="col-md-6">
+                    <p>"Yebo le vélo"</p>
+                    <a href="https://tp-responsive-6-jack-lecomte.netlify.com" class="site-link">https://tp-responsive-6-jack-lecomte.netlify.com</a>
+                </div>
             </div>
         </main>
 </div>

@@ -1,14 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @font-face{
     font-family: 'BigNoodle';
     src: url('font/big_noodle_titling.ttf');
 }
 
 @font-face{
-    font-family: 'FireSans';
+    font-family: 'FiraSans';
     src: url('font/FiraSans-Medium.otf');
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@font-face{
+    font-family: 'Camar';
+    src: url('font/Camar.otf');
+}
+
+
 
 /* Backup colors:
     423E3B
@@ -26,7 +33,12 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'FireSans';
+    font-family: 'Montserrat', sans-serif;
+}
+
+*::selection{
+    background-color: var(--green1);
+    color: #ffffff;
 }
 
 body{
@@ -34,12 +46,8 @@ body{
 }
 
 #pagebg{
-  /*  background-image: url('img/2best.png'); */
-    background-color: #1b1b1b;
-    background-position: center;
-    background-repeat: repeat;
+    background-color: var(--grey1);
     padding: 0;
-    padding-bottom: 100px;
 }
 
 .header-bg-container{
@@ -69,7 +77,7 @@ body{
 
 .text1{
     color: #1b1b1b;
-    font-size: 60px;
+    font-size: 45px;
     font-weight: 700;
     letter-spacing: 8px;
     /* -47px */
@@ -83,6 +91,8 @@ body{
     font-size: 40px;
     color: var(--green1);
     animation: text2 3s 1;
+    font-family: 'Camar';
+    font-size: 55px;
 }
 
 @keyframes text{
@@ -171,12 +181,6 @@ body{
     background-color: initial !important;
 }
 
-.main-div{
-    background-color: var(--grey1);
-    height: 3500px;
-    border-radius: 30px 30px;
-    margin-top: 70px;
-}
 
 @keyframes navbar{
     0%{
@@ -261,45 +265,84 @@ body{
 
 /* Start Main */
 
-.site-1-img{
-    height: 200px;
+.main-div{
+    min-height: 2500px;
+}
+
+.main-div .container-fluid{
+    display: flex;
+    justify-content: center;
+}
+
+.main-div .container-fluid .col-md-6{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.main-div .container-fluid .col-md-6:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-div .container-fluid .col-md-6 p{
     width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.main-div .container-fluid .col-md-6 div{
+    height: 400px;
+}
+
+.site-img{
     background-image: url("img/site1.png");
-    background-size: cover;
     background-position: center;
-    border-radius: 20px 20px;
-    filter: blur(1.5px);
-    transition: ease-in 0.2s;
-    /* test */
-    -webkit-perspective: 484px;
-    perspective: 484px;
-    -webkit-transform: scale(1) perspective(1000px) rotateX(20deg) rotateY(-23deg) rotate(10deg) translateX(-15px) translateY(35px);
-    transform: scale(1) perspective(1000px) rotateX(20deg) rotateY(-23deg) rotate(10deg) translateX(-15px) translateY(35px);
-    opacity: 70%;
+    background-size: cover;
+    transition: 0.2s ease-in;
 }
 
-.site-1-img:hover{
-    filter: blur(0);
-    /* test */
-    transform: scale(1) perspective(0) rotateX(0) rotateY(0) rotate(0) translateX(-45px) translateY(35px);
-    opacity: 100%;
-}
-
-.main-container-imgright div{
-    float: left;
-}
-
-.main-container-imgright p{
-    color: white;
-    margin-top: 2.3em;
-    font-size: 34px;
+.site-img:hover{
+    transform: scale(1.025);
+    filter: blur(1.1px);
 }
 
 .site-link{
     color: var(--green1);
     font-size: 25px;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'FiraSans';
     font-weight: 500;
+}
+
+/* Site 1 */
+
+#site-1{
+    background-color: var(--green1);
+    transform: skewX(-4deg);
+}
+
+#site-1 *::selection{
+    background-color: #ffffff;
+    color: var(--green1);
+}
+
+#site-1 .col-md-6 a{
+    color: var(--grey1);
+    transition: 0.1s ease-in;
+}
+
+#site-1 .col-md-6 a:hover{
+    color: #ffffff !important;
+}
+
+/* Site 2 */
+
+#site-2{
+    background-color: #1b1b1b;
+    transform: skewX(4deg);
 }
 
 /* End Main */
@@ -327,19 +370,19 @@ a:hover{
 .show {display:block !important;}
 
 body {
-    font-family: 'FireSans';
+    font-family: 'Montserrat', sans-serif;
 }
 
 .count-button {
 	font-size: 48px;
 	padding: 10px;
 	margin: 10px;
-    font-family: 'FireSans';
+    font-family: 'Montserrat', sans-serif;
 }
 
 .count {
 	font-size: 150px;
-    font-family: 'FireSans';
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     height: 200px;
 }
