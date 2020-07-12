@@ -160,7 +160,7 @@ body{
 .navbar-brand{
     background-color: var(--green1);
     color: white;
-    padding: 15px!important;
+    padding: 10px!important;
     transition: 0.2s ease-in;
 }
 
