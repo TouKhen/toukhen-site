@@ -22,6 +22,9 @@
     0e0e0e
     161413
 #c5a600
+
+footer color :
+var(--grey1)
 */
 
 :root{
@@ -46,7 +49,7 @@ body{
 }
 
 #pagebg{
-    background-color: var(--grey1);
+    background-color: #e9e9e9;
     padding: 0;
 }
 
@@ -145,9 +148,25 @@ body{
     }
 }
 
+.navbar{
+    padding: 0 15px 0 0!important;
+}
+
 .navbar-toggler{
     background-color: var(--green1) !important;
     border: 1px solid black !important;
+}
+
+.navbar-brand{
+    background-color: var(--green1);
+    color: white;
+    padding: 15px!important;
+    transition: 0.2s ease-in;
+}
+
+.navbar-brand:hover{
+    background-color: #d72f2f;
+    color: white !important;
 }
 
 .btn{
