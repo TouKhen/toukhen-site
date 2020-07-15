@@ -48,6 +48,18 @@ body{
     margin: 0;
 }
 
+body::-webkit-scrollbar {
+    width: 0.35rem;
+}
+
+body::-webkit-scrollbar-track{
+    background: var(--bars);
+}
+
+body::-webkit-scrollbar-thumb{
+    background: var(--green1);
+}
+
 #pagebg{
     background-color: #e9e9e9;
     padding: 0;
@@ -154,7 +166,8 @@ body{
 
 .navbar-toggler{
     background-color: var(--green1) !important;
-    border: 1px solid black !important;
+    border: none !important;
+    outline: none !important;
 }
 
 .navbar-brand{
@@ -162,6 +175,7 @@ body{
     color: white;
     padding: 12px!important;
     transition: 0.2s ease-in;
+    font-family: 'Camar';
 }
 
 .navbar-brand:hover{
@@ -190,6 +204,11 @@ body{
 
 .navbar a{
     color: white !important;
+}
+
+.nav-link{
+    margin-left: 15px;
+    font-weight: 600;
 }
 
 .dropdown-menu{
@@ -387,6 +406,8 @@ a:hover{
 }
 
 .show {display:block !important;}
+
+/* Counter */
 
 body {
     font-family: 'Montserrat', sans-serif;
