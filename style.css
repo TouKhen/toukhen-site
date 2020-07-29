@@ -194,7 +194,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .navbar{
-    background-color: var(--grey1) !important;
+    background-color: var(--bars) !important;
     animation: navbar 3s 1;
     position: absolute !important;
     width: 100%;
@@ -317,13 +317,6 @@ body::-webkit-scrollbar-thumb{
     overflow: hidden;
 }
 
-.main-div .container-fluid .col-md-6:first-child{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
 .main-div .container-fluid .col-md-6 p{
     width: 100%;
     text-align: center;
@@ -336,51 +329,79 @@ body::-webkit-scrollbar-thumb{
     height: 400px;
 }
 
+.site-text-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .site-img{
-    background-image: url("img/site1.png");
+    width: 100%;
     background-position: center;
     background-size: cover;
     transition: 0.2s ease-in;
+    filter: blur(1.1px) brightness(60%);
 }
 
 .site-img:hover{
-    transform: scale(1.025);
-    filter: blur(1.1px);
+    filter: blur(0px);
 }
 
 .site-link{
-    color: var(--green1);
     font-size: 25px;
     font-family: 'FiraSans';
     font-weight: 500;
 }
 
-/* Site 1 */
+/* Sites */
 
-#site-1{
+/* site-alt-1 */
+
+.site-alt-1{
     background-color: var(--green1);
     transform: skewX(-4deg);
 }
 
-#site-1 *::selection{
+.site-alt-1 *::selection{
     background-color: #ffffff;
     color: var(--green1);
 }
 
-#site-1 .col-md-6 a{
+.site-alt-1 .col-md-6 a{
     color: var(--grey1);
     transition: 0.1s ease-in;
 }
 
-#site-1 .col-md-6 a:hover{
+.site-alt-1 .col-md-6 a:hover{
     color: #ffffff !important;
+}
+
+/* site-alt-2 */
+
+.site-alt-2{
+    background-color: #1b1b1b;
+    transform: skewX(4deg);
+}
+
+.site-alt-2 .col-md-6 a{
+    color: var(--green1);
+}
+
+.site-alt-2 .col-md-6 a:hover{
+    color: #ffffff !important;
+}
+
+/* Site 1 */
+
+#site-1 .col-md-6 .site-img{
+    background-image: url("img/site1.png");
 }
 
 /* Site 2 */
 
-#site-2{
-    background-color: #1b1b1b;
-    transform: skewX(4deg);
+#site-2 .col-md-6 .site-img{
+    background-image: url("img/site2.png");
 }
 
 /* End Main */
