@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: toukhen-site.netlify.app
+Token: 76df045ee82588649273de9b8373eea84c6faa215fd71044ceced14efacb958b
